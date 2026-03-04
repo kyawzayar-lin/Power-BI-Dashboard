@@ -1,11 +1,21 @@
 # 📶 ISP Operations & Performance Dashboard
 
+
 ## 📌 Project Overview
 This repository contains a **Power BI Dashboard** designed to analyze operational data for a Fiber-to-the-Home (FTTH) Internet Service Provider. The project focuses on tracking the lifecycle of service orders—from initial installation to ongoing maintenance—while evaluating technical team efficiency.
 
 The goal of this practice project was to transform raw ISP datasets into actionable insights regarding customer growth, service bottlenecks, and workforce performance.
 
 ---
+
+
+
+
+## 📂 Project Resources
+* 📄 [Download PDF Version (PDF)](Myanmar Citizen Dashboard.pdf)
+* 🐍 [View Data Pre-processing Script](PBIX_File/Myanmar Citizen Dashboard.pbix)
+* 📊 [Raw Dataset](data/Test_Data.xlsx)
+
 
 ## 📊 Key Features & Insights
 
