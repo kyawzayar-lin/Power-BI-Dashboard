@@ -1,62 +1,49 @@
-ISP Customer Insights & Performance Dashboard
-📊 Project Overview
-This repository contains a Power BI Dashboard built using an Internet Service Provider (ISP) dataset. The primary goal of this project was to practice data modeling, DAX (Data Analysis Expressions), and data visualization techniques to uncover meaningful business insights.
+# 📶 ISP Operations & Performance Dashboard
 
-The dashboard focuses on key performance indicators (KPIs) such as customer churn, revenue trends, and service usage patterns to simulate a real-world business intelligence environment.
+## 📌 Project Overview
+This repository contains a **Power BI Dashboard** designed to analyze operational data for a Fiber-to-the-Home (FTTH) Internet Service Provider. The project focuses on tracking the lifecycle of service orders—from initial installation to ongoing maintenance—while evaluating technical team efficiency.
 
-🛠️ Tools & Technologies
-Power BI Desktop: Used for data transformation (Power Query), modeling, and visualization.
+The goal of this practice project was to transform raw ISP datasets into actionable insights regarding customer growth, service bottlenecks, and workforce performance.
 
-Power Query (M Language): Employed for data cleaning, handling missing values, and formatting data types.
+---
 
-DAX: Utilized to create calculated columns and measures for advanced analytics.
+## 📊 Key Features & Insights
 
-Dataset: Sourced from Kaggle (ISP Customer Data).
+### 1. Installation Lifecycle Tracking
+Monitors the flow of new customer acquisitions by categorizing installation orders:
+* **Total Customer Counts:** Tracking overall growth and network footprint.
+* **Order Status:** Real-time breakdown of **Completed**, **Pending**, and **Canceled** installations.
+* **Success Rate:** Analysis of successful installs vs. cancellations to identify gaps between sales and technical fulfillment.
 
-🔍 Key Features & Analysis
-The dashboard is divided into several analytical views to provide a holistic look at ISP operations:
+### 2. Maintenance & Service Reliability
+* **Maintenance Volume:** Tracking the frequency and types of reported service tickets.
+* **Resolution Metrics:** Categorization of maintenance tasks into **Completed**, **Pending**, or **Canceled** status.
 
-1. Customer Demographics
-Analysis of customer base by region, age group, and contract type.
+### 3. Efficiency & Lead Time
+* **Installation Completion Time:** Measures the average duration from order placement to "Light-on" (Active status).
+* **SLA Compliance:** Visualizing whether the technical team is meeting promised service timelines.
 
-Visualizing the split between Fiber Optic, DSL, and No-Internet customers.
+### 4. Team Performance Analytics
+* **Technician Productivity:** Comparative analysis of performance across different field teams.
+* **Task Distribution:** Load balancing analysis (Installations vs. Maintenance tasks per team).
+* **Completion Ratios:** Identifying high-performing units and teams requiring additional support.
 
-2. Financial Performance
-Monthly Recurring Revenue (MRR): Tracking revenue stability over time.
+---
 
-Total Revenue: A high-level view of the company's gross income.
+## 🛠️ Tools Used
+| Tool | Purpose |
+| :--- | :--- |
+| **Power BI Desktop** | Primary tool for data modeling and dashboard visualization. |
+| **Power Query** | Data cleaning, handling null values, and ETL processes. |
+| **DAX** | Used to create calculated measures for SLA and Completion rates. |
 
-3. Churn Analysis
-Identifying the "Churn Rate"—the percentage of customers leaving the service.
+---
 
-Correlation between contract length and churn probability.
+## 📂 Dataset Description
+The analysis is based on a simulated ISP dataset (FTTH focused) containing the following attributes:
 
-4. Technical Support & Service
-Monitoring the volume of support tickets generated.
-
-Average tenure of customers based on the level of technical support received.
-
-📈 Key Insights from the Data
-Through this practice project, I discovered several trends:
-
-Contract Type: Customers on "Month-to-Month" contracts have a significantly higher churn rate compared to those on two-year plans.
-
-Payment Methods: Electronic check users show a higher tendency to churn than those on automated credit card payments.
-
-Services: Users with "Fiber Optic" services had higher revenue but also higher support ticket volume.
-
-📂 How to Use
-Download the .pbix file: Clone this repository or download the Power BI file directly.
-
-Open in Power BI Desktop: Ensure you have the latest version of Power BI Desktop installed.
-
-Interact with the Report: Use the slicers (filters) on the left-hand side to filter the data by Region or Contract Type.
-
-🚀 Learning Objectives
-This project was a personal challenge to improve:
-
-Data Cleaning: Handling messy CSV exports and turning them into a clean Star Schema.
-
-User Experience (UX): Designing a dashboard that is intuitive and easy for a non-technical stakeholder to read.
-
-Storytelling: Moving beyond just "charts" to explaining the "why" behind the numbers.
+* **Order IDs:** Unique identifiers for every service task.
+* **Timestamps:** Tracking Request, Dispatch, and Completion dates.
+* **Task Type:** Categorized as `Installation` or `Maintenance`.
+* **Status:** Current state of the ticket (Complete/Pending/Cancel).
+* **Team ID:** The specific field unit assigned to the task.
